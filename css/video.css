@@ -1,0 +1,108 @@
+
+/* DIVS */
+/* Main DIV */
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+
+/*
+@media (max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+*/
+
+
+
+
+/* Inside video-preview div is thumbnail-row div */
+    .thumbnail-row{
+       margin-bottom: 8px;
+       display: inline-block;
+       position: relative;
+       
+    }
+        /* Inside thumbnail-row div we have the thumbnail*/
+        .thumbnail{
+            width: 100%;
+        }
+        .video-time{
+            font-size: 12px;
+            font-weight: 500;
+            padding: 4px;
+            border-radius: 2px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            bottom: 8px;
+            right: 5px;
+
+        }
+/* Inside video-preview div is channel-propic div */
+    .channel-propic{
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+    }
+        /* Inside channel-propic div is img channel-img */
+        .channel-image{
+            width: 36px;
+            border-radius: 25px;
+        }
+/* Inside video-preview div is video-info-grid*/
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+/* Inside video-preview div is all-text div */
+    .all-text{
+        display: inline-block;
+        width: 200px;
+    }
+    /*Inside all-text div are video-title, video-title, video-stas*/
+        /*VIDEO - TITLE*/
+        .video-title{
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        /*VIDEO - AUTHOR*/
+        .video-author{
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+            margin-bottom: 4px;
+        }
+        /*VIDEO - STATS*/
+        .video-stats{
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+            margin-top: 2px;
+        }
+
+/* MEDIA QUERIES */
+@media (min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .video-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
